@@ -2,24 +2,26 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width" />
+
 <title>Pesquisar Titulos</title>
 <link rel="stylesheet" type="text/css"
-	href="/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/estilo-sistema/estilo.css" />
-<link rel="stylesheet" type="text/css" href="/estilo-sistema/bootstrap-datepicker.standalone.min.css" />
+	th:href="@{/bootstrap/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/estilo-sistema/estilo.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/estilo-sistema/bootstrap-datepicker.standalone.min.css}" />
 </head>
 <body>
 	<header layout:include="Cabecalho"></header>
-	
 	<section layout:fragment="conteudo">
 		<p>Contéudo Principal</p>
 	</section>
 	
-	<script type="text/javascript" src="/bootstrap/js/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/bootstrap/js/bootstrap-datepicker.min.js"></script>
-	<script type="text/javascript" src="/bootstrap/js/bootstrap-datepicker.pt-BR.min.js"></script>
-	<script type="text/javascript" src="/bootstrap/js/jquery.maskMoney.min.js"></script>
-	<script type="text/javascript" src="/bootstrap/js/cobranca.js"></script>
+	<script type="text/javascript" th:src="@{/bootstrap/js/jquery-2.2.3.min.js}"></script>
+	<script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src="@{/bootstrap/js/bootstrap-datepicker.min.js}"></script>
+	<script type="text/javascript" th:src="@{/bootstrap/js/bootstrap-datepicker.pt-BR.min.js}"></script>
+	<script type="text/javascript" th:src="@{/bootstrap/js/jquery.maskMoney.min.js}"></script>
+	<script type="text/javascript" th:src="@{/bootstrap/js/cobranca.js}"></script>
 </body>
 </html>
